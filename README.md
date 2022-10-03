@@ -159,7 +159,7 @@ When products are added/removed form the cart then the total price needs to be u
 - Add an endpoint to the product service, that can calculate the price for a list of products
 - Update the total price with the result of the product service
 
-## Heath
+## Health
 See https://quarkus.io/guides/smallrye-health
 - Add a heath endpoint that also checks that the database is "up" to both services.
 
@@ -167,6 +167,10 @@ See https://quarkus.io/guides/smallrye-health
 See https://quarkus.io/guides/micrometer
 - Add a timer to all the database calls in the inventory service
 - Ensure that a histogram for the 90 end 95 percentiles are exposed
+
+### Bonus Metrics
+- Setup a docker image of https://hub.docker.com/r/prom/prometheus that runs prometheus and scraps your endpoint. Also see https://prometheus.io/docs/prometheus/latest/getting_started/#downloading-and-running-prometheus
+- Try and get a graph from the timer metrics
 
 ## Configuration
 See https://quarkus.io/guides/config
@@ -189,6 +193,11 @@ See https://quarkus.io/guides/smallrye-fault-tolerance
   }
   ```
 - Ensure that the Cart service retries the pricing operation if it fails
+
+## Native image
+See https://quarkus.io/guides/building-native-image 
+Build a native image of your services.
+
 
 ## BONUS: Tracing
 See https://quarkus.io/guides/opentracing
