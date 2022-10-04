@@ -1,5 +1,10 @@
 # Quarkus-MicroProfile-Fundamentals
 
+## Prerequisite
+- Install JDK 11 or higher
+- Install Maven 3.6.2 or higher 3.8 is recommended
+- Install docker, this will be used for the database
+
 ## Inventory service
 
 ### Hello world Quarkus
@@ -15,7 +20,7 @@ For extensions choose
 
 Import this project into your IDE, and start the application (details are in the readme.md of the generated project)
 
-Tip: if you are working with a light themed console, then some of the logging might be hard to read, add the following line to the `appilcation.properties`. Quarkus was build with the dark theme in mind ;)
+Tip: if you are working with a light themed console, then some logging might be hard to read, add the following line to the `appilcation.properties`. Quarkus was build with the dark theme in mind ;)
 
     quarkus.log.console.darken=100
 
@@ -26,7 +31,7 @@ If you are a fan of lombok you can add the following dependency:
     <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>1.18.20</version>
+        <version>1.18.24</version>
         <scope>provided</scope>
     </dependency>
 
@@ -197,7 +202,6 @@ See https://quarkus.io/guides/smallrye-fault-tolerance
 ## Native image
 See https://quarkus.io/guides/building-native-image 
 Build a native image of your services.
-
 
 ## BONUS: Tracing
 See https://quarkus.io/guides/opentracing
