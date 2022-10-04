@@ -52,6 +52,7 @@ See https://quarkus.io/guides/rest-json
 ```
   Test the endpoint with swagger (http://localhost:8080/q/swagger-ui/)
 - Create a rest assured `@QuakrusTest` unit test to very that the endpoint returns the correct list`
+  Tip: have a look at https://quarkus.io/guides/getting-started-testing#recap-of-http-based-testing-in-jvm-mode and https://github.com/rest-assured/rest-assured/wiki/Usage
 
 ## Document API
 See https://github.com/eclipse/microprofile-open-api/blob/2.0.1-RC1/spec/src/main/asciidoc/microprofile-openapi-spec.adoc and look for `Operation`
